@@ -526,13 +526,6 @@
       <div class="events-inner" id="events-inner"></div>
     </div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px;font:600 10px Barlow,sans-serif;color:#1C3256">
-      <div style="border:1px solid var(--border);border-radius:6px;padding:6px;min-height:46px">Observations avant-match<div id="obs-pre" contenteditable="true" style="font-weight:400;margin-top:3px">—</div></div>
-      <div style="border:1px solid var(--border);border-radius:6px;padding:6px;min-height:46px">Réserves / observations d'après-match<div contenteditable="true" style="font-weight:400;margin-top:3px"></div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:0 12px 8px;font:600 10px Barlow,sans-serif;color:#1C3256;text-align:center">
-      <div style="border:1px solid var(--border);border-radius:6px;padding:6px;height:52px">Arbitre 1</div><div style="border:1px solid var(--border);border-radius:6px;padding:6px;height:52px">Arbitre 2</div><div style="border:1px solid var(--border);border-radius:6px;padding:6px;height:52px">Capitaine / resp. domicile</div><div style="border:1px solid var(--border);border-radius:6px;padding:6px;height:52px">Capitaine / resp. extérieur</div><div style="border:1px solid var(--border);border-radius:6px;padding:6px;height:52px">Secrétaire / chronométreur</div>
-    </div>
     <!-- LEGEND -->
     <div class="legend-bar">
       <span class="leg-key">Légende</span>
@@ -1032,7 +1025,6 @@ function init() {
   document.getElementById('arb2-name').textContent = m.arb2 || '—';
   document.getElementById('del-name').textContent = m.delegue || '—';
   document.getElementById('chrono-name').textContent = m.chrono || '—';
-  document.getElementById('obs-pre').textContent = m.observations || '—';
 
   // Players
   renderPlayers('tbody-home', h.players || [], 'home');
